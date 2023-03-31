@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StarWars</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="swapi__title">SWAPI simple project</h1>
+      <div class="swapi__main-wrapper">
+        <div class="swapi__wrapper">
+          <div class="swapi__input-wrapper">
+            <input
+              type="text"
+              id="swapi__input"
+              class="swapi__input"
+              placeholder="people"
+            />
+            <input
+              type="button"
+              value="Search"
+              class="swapi__input-btn"
+              id="swapi__btn"
+            />
+          </div>
+          <div class="swapi__hint">
+            <p>U can type:</p>
+            <ul class="swapi__hint-items">
+              <li class="swapi__hint-item" data-id="films">films</li>
+              <li class="swapi__hint-item active" data-id="people">people</li>
+              <li class="swapi__hint-item" data-id="planets">planets</li>
+              <li class="swapi__hint-item" data-id="species">species</li>
+              <li class="swapi__hint-item" data-id="starships">starships</li>
+              <li class="swapi__hint-item" data-id="vehicles">vehicles</li>
+            </ul>
+          </div>
+        </div>
+        <div class="swapi__output">
+          <div class="swapi__output-wrapper"></div>
+          <button class="swapi__output-btn hidden">Show more</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

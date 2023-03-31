@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  font-family: "Press Start 2P", cursive;
+}
+
+body {
+  background-color: rgb(6, 5, 31);
+  color: rgb(219, 234, 60);
+}
+
+.container {
+  padding: 0 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    width: 90%;
+    margin: auto;
+    padding: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (min-width: 767.98px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1199.98px) {
+  .container {
+    max-width: 1140px;
+    min-width: 1140px;
+  }
+}
+
+.swapi__title {
+  font-size: 36px;
+}
+
+.swapi__input-wrapper {
+  display: flex;
+}
+
+.swapi__input {
+  width: 300px;
+  padding: 10px 5px;
+  border-radius: 0px;
+  outline: none;
+  border: 1px solid black;
+}
+
+.swapi__input-btn {
+  border: 1px solid black;
+  border-radius: 0px;
+  outline: none;
+  cursor: pointer;
+  width: 100px;
+}
+
+.swapi__hint-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.swapi__hint-item {
+  cursor: pointer;
+  width: max-content;
+}
+
+.swapi__output-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 15px;
+  height: 387px;
+  overflow: auto;
+}
+
+.swapi__output-wrapper::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+/* Track */
+.swapi__output-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f100;
+}
+
+/* Handle */
+.swapi__output-wrapper::-webkit-scrollbar-thumb {
+  background: rgb(219, 234, 60);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+.swapi__output-wrapper::-webkit-scrollbar-thumb:hover {
+  background: rgb(139, 148, 44);
+}
+
+.active {
+  border-bottom: 2px solid rgb(219, 234, 60);
+}
+
+.el {
+  border-bottom: 2px solid rgb(219, 234, 60);
+}
+
+.swapi__output-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(14, 14, 80);
+  box-shadow: 0 0 2px 0 rgb(14, 14, 80);
+  border-radius: 15px;
+  overflow: hidden;
+  width: 360px;
+}
+
+.swapi__output-description {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 15px;
+}
+
+.swapi__output-btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid rgb(219, 234, 60);
+  border-radius: 15px;
+  background-color: rgb(6, 5, 31);
+  color: rgb(219, 234, 60);
+  cursor: pointer;
+}
+
+.swapi__output-btn.hidden {
+  display: none;
+}
+
+.swapi__output-name {
+  word-wrap: break-word;
+  margin: 2px;
+}
